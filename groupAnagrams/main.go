@@ -1,6 +1,14 @@
 package groupAnagrams
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
+
+func main() {
+	words := []string{"", "tar", "rat", "apple", "banana", "cat", "leapp"}
+	fmt.Printf("%v\n", groupAnagrams(words))
+}
 
 func groupAnagrams(strs []string) [][]string {
 	matches := map[string][]string{}
